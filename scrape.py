@@ -11,6 +11,7 @@ soup = BeautifulSoup(res.text, 'html.parser') # this is a soup object
 soup2 = BeautifulSoup(res2.text, 'html.parser') # adding another page
 
 # BEAUTIFULSOUP SELECTORS
+links = soup.select('.titleline')
 votes = soup.select('.score')
 subtext = soup.select('.subtext')
 
